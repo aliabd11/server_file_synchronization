@@ -8,19 +8,24 @@ Server and client code to emulate the functionality of rsync, copying from a cli
 
 Ex. Consider the following directory strucutre
 
+```
 adir:
     bdir:
         file2
     file1
+```
+
 
 If server is run as "rcopy_server . where dest is a relative or absolute path on the server, then when we run "rcopy_client adir localhost", contents of dest now look like:
 
+```
 sandbox:
     dest:
         adir:
             bdir:
                 file2
             file1
+```
 
 
 ## Note
